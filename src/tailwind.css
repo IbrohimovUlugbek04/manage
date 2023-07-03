@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("../images/bgimg.svg");
+  background-size: 436px 970px;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 65px) -340px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.management__item:before {
+  display: block;
+  margin-right: 15px;
+  padding: 6px 25px;
+  height: 40px;
+  color: #ffff;
+  background-color: #f3603c;
+  border-radius: 40px;
+}
+
+.management__item:nth-child(1):before {
+  content: "01";
+}
+
+.management__item:nth-child(2):before {
+  content: "02";
+}
+
+.management__item:nth-child(3):before {
+  content: "03";
+}
+
+.management__item__heading:before {
+  display: block;
+  margin-right: 15px;
+  padding: 6px 25px;
+  color: #ffff;
+  background-color: #f3603c;
+  border-radius: 40px;
+}
+
+.management__item:nth-child(1) .management__item__heading:before {
+  content: "01";
+}
+
+.management__item:nth-child(2) .management__item__heading:before {
+  content: "02";
+}
+
+.management__item:nth-child(3) .management__item__heading:before {
+  content: "03";
+}
+
+.slider__item::before {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url("../images/anisha.png");
+  background-size: 72px;
+  background-position: center;
+  content: "";
+}
+
+.slider__item:nth-child(2)::before {
+  background-image: url("../images/bravo.png");
+}
+
+.slider__item:nth-child(3)::before {
+  background-image: url("../images/richard.png");
+}
